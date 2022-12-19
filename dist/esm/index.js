@@ -1,2 +1,0 @@
-import"./style.css";import{jsx as r}from"react/jsx-runtime";import e from"./components/badge/Badge.module.scss";var t=function(){return t=Object.assign||function(r){for(var e,t=1,n=arguments.length;t<n;t++)for(var o in e=arguments[t])Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r},t.apply(this,arguments)},n=function(n){var o=n.count;return r("div",t({className:e.badge},{children:r("div",t({className:"text-green-500"},{children:o}))}))};export{n as Badge};
-//# sourceMappingURL=index.js.map
