@@ -1,0 +1,2 @@
+"use strict";require("./style.css");var e=require("react/jsx-runtime"),r=require("./components/badge/Badge.module.scss"),t=function(){return t=Object.assign||function(e){for(var r,t=1,s=arguments.length;t<s;t++)for(var n in r=arguments[t])Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n]);return e},t.apply(this,arguments)};exports.Badge=function(s){var n=s.count;return e.jsx("div",t({className:r.badge},{children:e.jsx("div",t({className:"text-green-500"},{children:n}))}))};
+//# sourceMappingURL=index.js.map
