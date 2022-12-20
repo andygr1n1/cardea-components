@@ -1,10 +1,13 @@
 {
-    "name": "cardea-components",
+    "name": "@andygr1n1/cardea-components",
     "version": "1.0.0",
     "description": "",
+    "type": "module",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
-    "type": "module",
+    "files": [
+        "dist"
+    ],
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "rollup --bundleConfigAsCjs -c",
@@ -12,6 +15,9 @@
     },
     "keywords": [],
     "author": "andygr1n1",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/andygr1n1"
+    },
     "license": "ISC",
     "dependencies": {
         "csstype": "^3.1.1",
