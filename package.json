@@ -15,9 +15,6 @@
     },
     "keywords": [],
     "author": "andygr1n1",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/andygr1n1"
-    },
     "license": "ISC",
     "dependencies": {
         "csstype": "^3.1.1",
