@@ -1,16 +1,16 @@
 {
     "name": "@andygr1n1/cardea-components",
-    "version": "1.0.0",
-    "description": "",
+    "version": "1.0.2",
+    "description": "react-rollup component lib",
     "type": "module",
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
     "files": [
         "dist"
     ],
-    "types": "dist/index.d.ts",
+    "types": "dist/src/index.d.ts",
     "scripts": {
-        "build": "rollup --bundleConfigAsCjs -c",
+        "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -27,6 +27,7 @@
         "@rollup/plugin-typescript": "^10.0.1",
         "@types/react": "^18.0.26",
         "autoprefixer": "^10.4.13",
+        "node-sass": "^8.0.0",
         "postcss": "^8.4.20",
         "postcss-preset-env": "^7.8.3",
         "react": "^18.2.0",
@@ -36,12 +37,12 @@
         "rollup-plugin-postcss": "^4.0.2",
         "rollup-plugin-tailwindcss": "^1.0.0",
         "rollup-plugin-terser": "^7.0.2",
-        "sass": "^1.57.0",
         "tailwindcss": "^3.2.4",
         "tslib": "^2.4.1",
         "typescript": "^4.9.4"
     },
     "peerDependencies": {
+        "@types/react": "^18.0.26",
         "react": "^18.2.0"
     }
 }
