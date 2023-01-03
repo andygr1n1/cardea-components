@@ -1,6 +1,6 @@
 {
     "name": "@andygr1n1/cardea-components",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "description": "react-rollup component lib",
     "type": "module",
     "main": "dist/index.js",
@@ -17,6 +17,7 @@
     "author": "andygr1n1",
     "license": "ISC",
     "dependencies": {
+        "antd": "^5.1.2",
         "csstype": "^3.1.1",
         "js-tokens": "^4.0.0",
         "loose-envify": "^1.4.0"
