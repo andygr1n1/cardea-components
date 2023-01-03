@@ -1,6 +1,6 @@
 {
     "name": "@andygr1n1/cardea-components",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "react-rollup component lib",
     "type": "module",
     "main": "dist/index.js",
