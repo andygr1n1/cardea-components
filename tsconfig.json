@@ -1,20 +1,39 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "esnext",
-        "jsx": "react-jsx",
-        "sourceMap": true,
-        "declarationDir": "dist",
-        "outDir": "dist",
-        "strict": true,
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": false,
         "skipLibCheck": true,
+        "esModuleInterop": false,
+        "strict": true,
         "forceConsistentCasingInFileNames": true,
-        "declaration": true,
-        "emitDeclarationOnly": true
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        //
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": false,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "noUncheckedIndexedAccess": true,
+        "noFallthroughCasesInSwitch": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "experimentalDecorators": false,
+        "importsNotUsedAsValues": "preserve",
+        "useUnknownInCatchVariables": false,
+        "types": ["vite/client", "node"]
     },
-    "include": ["src/**/*", "rollup.config.ts", "index.d.ts"],
-    "exclude": ["./node_modules"]
+    "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "package.json"],
+    "exclude": ["node_modules", "dist"]
 }

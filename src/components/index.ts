@@ -1,2 +1,2 @@
-export { default as Badge } from './badge'
-export { default as Button } from './button'
+export { default as CardeaButton } from './cardea-button'
+export { default as CardeaButtonExtended } from './cardea-button-extended'

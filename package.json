@@ -1,48 +1,55 @@
 {
     "name": "@andygr1n1/cardea-components",
-    "version": "1.0.2",
+    "version": "1.0.7",
     "description": "react-rollup component lib",
+    "private": false,
     "type": "module",
-    "main": "dist/index.js",
-    "module": "dist/index.js",
     "files": [
-        "dist"
+        "dist/**/*",
+        "dist/style.css"
     ],
-    "types": "dist/src/index.d.ts",
-    "scripts": {
-        "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "types": "./dist/index.d.ts",
+    "main": "./dist/cardea-components.es.js",
+    "module": "./dist/cardea-components.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/cardea-components.es.js",
+            "require": "./dist/cardea-components.es.js"
+        },
+        "./dist/style.css": "./dist/style.css"
     },
-    "keywords": [],
-    "author": "andygr1n1",
-    "license": "ISC",
+    "scripts": {
+        "build": "rm -rf ./dist && tsc && vite build",
+        "storybook": "start-storybook -p 6006"
+    },
     "dependencies": {
-        "csstype": "^3.1.1",
-        "js-tokens": "^4.0.0",
-        "loose-envify": "^1.4.0"
+        "antd": "^5.1.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^24.0.0",
-        "@rollup/plugin-node-resolve": "^15.0.1",
-        "@rollup/plugin-typescript": "^10.0.1",
+        "@babel/core": "^7.20.12",
+        "@storybook/addon-actions": "^6.5.15",
+        "@storybook/addon-essentials": "^6.5.15",
+        "@storybook/addon-interactions": "^6.5.15",
+        "@storybook/addon-links": "^6.5.15",
+        "@storybook/builder-vite": "^0.2.6",
+        "@storybook/react": "^6.5.15",
+        "@storybook/testing-library": "^0.0.13",
         "@types/react": "^18.0.26",
-        "autoprefixer": "^10.4.13",
+        "@types/react-dom": "^18.0.9",
+        "@vitejs/plugin-react": "^3.0.0",
+        "babel-loader": "^8.3.0",
         "node-sass": "^8.0.0",
-        "postcss": "^8.4.20",
-        "postcss-preset-env": "^7.8.3",
-        "react": "^18.2.0",
-        "rollup": "^3.7.5",
-        "rollup-plugin-dts": "^5.0.0",
-        "rollup-plugin-peer-deps-external": "^2.2.4",
-        "rollup-plugin-postcss": "^4.0.2",
-        "rollup-plugin-tailwindcss": "^1.0.0",
-        "rollup-plugin-terser": "^7.0.2",
-        "tailwindcss": "^3.2.4",
-        "tslib": "^2.4.1",
-        "typescript": "^4.9.4"
+        "sass": "^1.57.1",
+        "typescript": "^4.9.3",
+        "vite": "^4.0.0",
+        "vite-plugin-dts": "^1.7.1",
+        "vite-tsconfig-paths": "^4.0.3"
     },
     "peerDependencies": {
-        "@types/react": "^18.0.26",
-        "react": "^18.2.0"
+        "antd": "^5.1.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     }
 }
