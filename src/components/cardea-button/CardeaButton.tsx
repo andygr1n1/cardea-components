@@ -1,4 +1,4 @@
-// import './CardeaButton.scss'
+import './CardeaButton.scss'
 
 import { Button } from 'antd'
 import { IButtonProps } from './CardeaButton.types'
